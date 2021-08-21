@@ -41,7 +41,7 @@
 		<section class="main" id="main">
 			<div class="main-body">
 				<div class="owl-carousel owl-theme">
-					<div class="item-carousel">
+					<div class="item-carousel" data-dot="<button class='countDot'></button>">
 						<div class="owl-wrap-text">
 							<div class="title-text">
 								<h2>No Title</h2>
@@ -49,7 +49,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
 					</div>
-					<div class="item-carousel">
+					<div class="item-carousel" data-dot="<button class='countDot'></button>">
 						<div class="owl-wrap-text">
 							<div class="title-text">
 								<h2>No Title</h2>
@@ -57,7 +57,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
 					</div>
-					<div class="item-carousel">
+					<div class="item-carousel" data-dot="<button class='countDot'></button>">
 						<div class="owl-wrap-text">
 							<div class="title-text">
 								<h2>No Title</h2>
@@ -65,7 +65,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
 					</div>
-					<div class="item-carousel">
+					<div class="item-carousel" data-dot="<button class='countDot'></button>">
 						<div class="owl-wrap-text">
 							<div class="title-text">
 								<h2>No Title</h2>
@@ -77,8 +77,8 @@
 			</div>
 			<div class="owl-navigation">
 				<div id="counter"></div>
-				<button class="btn-nav customPrevBtn"><i class="far fa-arrow-right"></i></button>
-				<button class="btn-nav customNextBtn"><i class="far fa-arrow-left"></i></button>
+				<button class="btn-nav customPrevBtn">&#8249;</button>
+				<button class="btn-nav customNextBtn">&#8250;</button>
 			</div>
 		</section>
 		<!-- end of section -->
@@ -96,4 +96,7 @@
 	<script>
 
 	</script>
+	<style>
+		
+	</style>
 </html>

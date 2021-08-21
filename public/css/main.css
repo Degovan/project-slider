@@ -14,7 +14,9 @@
 	--primary-color: #f5de0d;
 	--secondary-primary-color: #000;
 }
-
+body{
+	  counter-reset: countDots;
+}
 header.header{
 	z-index: 999 !important;
 	box-sizing: border-box;
@@ -76,6 +78,21 @@ header.header .head-body .btn-bar{
 	margin: 8;
 	padding: 10px;
 
+}
+.owl-dots{
+	margin-top: 5rem;
+}
+.owl-dots .owl-dot.active .countDots{
+	background: red;
+}
+.countDot:before{
+		counter-increment: countDots;
+	 content: counter(countDots);
+	 color: #333;
+}
+
+.countDot.is-selected {
+  background: #ED2;
 }
 
 @media only screen and (max-width: 780px){

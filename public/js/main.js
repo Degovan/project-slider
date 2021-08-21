@@ -1,6 +1,9 @@
 // core owl carouse
   $(".owl-carousel").owlCarousel({
   	items:1,
+  	dots: true,
+    dotsData: true,
+    
   });
 
 // counter slide 
