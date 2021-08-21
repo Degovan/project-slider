@@ -76,9 +76,11 @@
 				</div>
 			</div>
 			<div class="owl-navigation">
-				<div id="counter"></div>
-				<button class="btn-nav customPrevBtn">&#8249;</button>
-				<button class="btn-nav customNextBtn">&#8250;</button>
+				<div id="counter">1/4</div>
+				<div class="btn-navigation-wrap">
+				<button class="btn-nav customPrevBtn">	&#8592;</button>
+				<button class="btn-nav customNextBtn">	&#8594;</button>
+				</div>
 			</div>
 		</section>
 		<!-- end of section -->

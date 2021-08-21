@@ -51,7 +51,7 @@ header.header .head-body .btn-bar{
 /* owl carousel */
 
 .owl-carousel{
-	margin-top: 10rem;
+	margin-top: 5rem;
 }
 .item-carousel{
 	padding: 20px;
@@ -69,21 +69,29 @@ header.header .head-body .btn-bar{
 	margin-top: 2rem;
 }
 .owl-navigation{
-	max-width: 600px;
+	max-width: 800px;
 	width: 100%;
+	display: none;
 	box-sizing: border-box;
-	text-align: right;
 }
 .owl-navigation .btn-nav{
-	margin: 8;
-	padding: 10px;
+	padding: 5px 15px;
+	font-size: 20px;
+	z-index: 999;
+	font-weight: bold;
+}
+.owl-navigation #counter{
+	margin-top: 3.6rem;
+}
 
-}
-.owl-dots{
-	margin-top: 5rem;
-}
-.owl-dots .owl-dot.active .countDots{
+.owl-dots .owl-dot.active{
 	background: red;
+}
+.countDot{
+	background: transparent !important;
+	outline: none;
+	padding: 8px 15px;
+	border: 1px solid #dcdcdc;
 }
 .countDot:before{
 		counter-increment: countDots;
@@ -128,4 +136,3 @@ header.header .head-body .btn-bar{
 	header.header .head-body .btn-bar{
 		display: block;
 	}
-}
