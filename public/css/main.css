@@ -71,60 +71,40 @@ header.header .head-body .btn-bar{
 .owl-navigation{
 	max-width: 800px;
 	width: 100%;
-	display: none;
+	margin-top: 2rem;
+	text-align: right;
 	box-sizing: border-box;
 }
 .owl-navigation .btn-nav{
-	padding: 5px 15px;
-	font-size: 20px;
-	z-index: 999;
+	padding: 8px 14px;
+	font-size: 15px;
+	cursor: pointer;
+	background: transparent;
+	color: grey;
+	border: 1px solid grey;
+	z-index: 999 !important	;
 	font-weight: bold;
 }
 .owl-navigation #counter{
-	margin-top: 3.6rem;
+	margin-top: 2rem;
 }
-
-.owl-dot {
-	width: 2rem;
-	border: 1px solid #dee2e6;
-	overflow: hidden;
+.owl-dots .owl-dot.active{
+	background: red;
 }
-
-.owl-dot:first-child {
-	border-top-left-radius: .3rem;
-	border-bottom-left-radius: .3rem;
+.owl-dots{
+	margin-left: 40rem;
+	box-sizing: border-box;
 }
-
-.owl-dot:last-child {
-	border-top-right-radius: .3rem;
-	border-bottom-right-radius: .3rem;
-}
-
 .countDot{
-	width: 100%;
-	border: none;
-	cursor: pointer;
-	background-color: #fff;
+	background: transparent !important;
 	outline: none;
-	padding: .5rem .75rem;
-	line-height: 1.25;
+	padding: 8px 15px;
+	border: 1px solid #dcdcdc;
 }
-
-.owl-dots .owl-dot.active .countDot{
-	background-color: #e9ecef;
-	border-color: #dee2e6;
-}
-
-.countDot:hover {
-	color: #0056b3;
-	background-color: #e9ecef;
-	border-color: #dee2e6;
-}
-
 .countDot:before{
-	counter-increment: countDots;
-	content: counter(countDots);
-	color: #007bff
+		counter-increment: countDots;
+	 content: counter(countDots);
+	 color: #333;
 }
 
 .countDot.is-selected {
@@ -132,14 +112,15 @@ header.header .head-body .btn-bar{
 }
 
 @media only screen and (max-width: 780px){
-	.carousel-cell{
-		height: 300px;
+	.owl-dots{
+		text-align: center;
+		margin-left: 0;
 	}
-	.carousel-cell .carousel-content{
-	background: #fff;
-	padding: 20px;
+	.owl-navigation{
 	margin-top: 2rem;
-	}
+	text-align:center;
+	box-sizing: border-box;
+}
 	.menu-head{
 		text-align: center;
 		background: #fff;
@@ -164,3 +145,5 @@ header.header .head-body .btn-bar{
 	header.header .head-body .btn-bar{
 		display: block;
 	}
+
+}
