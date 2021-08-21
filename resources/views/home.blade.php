@@ -43,46 +43,16 @@
     <section class="main" id="main">
         <div class="main-body">
             <div class="owl-carousel owl-theme">
+                @foreach ($getSlider as $item)
                 <div class="item-carousel" data-dot="<button class='countDot'></button>">
                     <div class="owl-wrap-text">
                         <div class="title-text">
-                            <h2>No Title</h2>
+                            <h2>{{$item->title}}</h2>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut
-                            possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas
-                            neque nihil nulla vel beatae sit sapiente.</p>
+                        <p> {{$item->text}} .</p>
                     </div>
                 </div>
-                <div class="item-carousel" data-dot="<button class='countDot'></button>">
-                    <div class="owl-wrap-text">
-                        <div class="title-text">
-                            <h2>No Title</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut
-                            possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas
-                            neque nihil nulla vel beatae sit sapiente.</p>
-                    </div>
-                </div>
-                <div class="item-carousel" data-dot="<button class='countDot'></button>">
-                    <div class="owl-wrap-text">
-                        <div class="title-text">
-                            <h2>No Title</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut
-                            possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas
-                            neque nihil nulla vel beatae sit sapiente.</p>
-                    </div>
-                </div>
-                <div class="item-carousel" data-dot="<button class='countDot'></button>">
-                    <div class="owl-wrap-text">
-                        <div class="title-text">
-                            <h2>No Title</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut
-                            possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas
-                            neque nihil nulla vel beatae sit sapiente.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <div class="owl-navigation">
@@ -90,7 +60,7 @@
                 <button class="btn-nav customPrevBtn"> &#8592;</button>
                 <button class="btn-nav customNextBtn"> &#8594;</button>
             </div>
-              <div id="counter">1/4</div>
+              <div id="counter">1/ {{$count}} </div>
         </div>
     </section>
     <!-- end of section -->
