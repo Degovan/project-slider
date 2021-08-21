@@ -11,9 +11,10 @@
 		<link rel="stylesheet" href="../css/main.css">
 		<link rel="stylesheet" href="../css/all.css">
 		<link rel="stylesheet" href="../css/solid.css">
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css" crossorigin>
-		<link rel="stylesheet" href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css" crossorigin>
+		<link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="../js/jquery.min.js"></script>
 	</head>
 	<body>
 		<!-- header -->
@@ -39,42 +40,46 @@
 		<!-- section main -->
 		<section class="main" id="main">
 			<div class="main-body">
-			<div class="carousel" data-flickity='{  "wrapAround": true  }'>
-				<div class="carousel-cell">
-					<div class="carousel-content">
-						<div class="title-cell">
-							<h2>Hello.</h2>
-						</div>
-						<br>
-						<div class="content-cell">
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Recusandae iusto necessitatibus soluta, aliquam voluptate a quos excepturi quis ab ducimus reiciendis sunt maiores sequi alias, dolore laborum. Officia, voluptas nisi.</p>
+				<div class="owl-carousel owl-theme">
+					<div class="item-carousel">
+						<div class="owl-wrap-text">
+							<div class="title-text">
+								<h2>No Title</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
 					</div>
-				</div>
-				<div class="carousel-cell">
-					<div class="carousel-content">
-						<div class="title-cell">
-							<h2>Hello.</h2>
-						</div>
-						<br>
-						<div class="content-cell">
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Recusandae iusto necessitatibus soluta, aliquam voluptate a quos excepturi quis ab ducimus reiciendis sunt maiores sequi alias, dolore laborum. Officia, voluptas nisi.</p>
+					<div class="item-carousel">
+						<div class="owl-wrap-text">
+							<div class="title-text">
+								<h2>No Title</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
 					</div>
-				</div>
-				<div class="carousel-cell">
-					<div class="carousel-content">
-						<div class="title-cell">
-							<h2>Hello.</h2>
+					<div class="item-carousel">
+						<div class="owl-wrap-text">
+							<div class="title-text">
+								<h2>No Title</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
-						<br>
-						<div class="content-cell">
-							<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Recusandae iusto necessitatibus soluta, aliquam voluptate a quos excepturi quis ab ducimus reiciendis sunt maiores sequi alias, dolore laborum. Officia, voluptas nisi.</p>
+					</div>
+					<div class="item-carousel">
+						<div class="owl-wrap-text">
+							<div class="title-text">
+								<h2>No Title</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto blanditiis natus quo aut possimus dolor incidunt, similique provident placeat consequuntur temporibus ipsum voluptas neque nihil nulla vel beatae sit sapiente.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="owl-navigation">
+				<div id="counter"></div>
+				<button class="btn-nav customPrevBtn"><i class="far fa-arrow-right"></i></button>
+				<button class="btn-nav customNextBtn"><i class="far fa-arrow-left"></i></button>
+			</div>
 		</section>
 		<!-- end of section -->
 		<!-- footer -->
@@ -85,9 +90,10 @@
 		</footer>
 		<!-- end of footer -->
 	</body>
-
 	<!-- javascript  -->
-	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
-	<script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
+	<script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 	<script src="../js/main.js"></script>
+	<script>
+
+	</script>
 </html>

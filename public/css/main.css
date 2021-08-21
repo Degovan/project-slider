@@ -46,44 +46,38 @@ header.header .head-body .btn-bar{
 	background-color: red;
 }
 
-/* flickity carousel */
+/* owl carousel */
 
-.carousel {
-  background: #FAFAFA;
-  margin-top: 5rem;
-}
-
-.carousel-cell {
-  width: 66%;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
-  height: 500px;
-  padding: 20px;
-  margin-right: 10px;
-  /*border-radius: 5px;*/
-  counter-increment: carousel-cell;
-  background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../asset/img/021-p-1600.jpeg');
-}
-.carousel-cell:nth-child(2){
-	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../asset/img/027-p-800.png');
-}
-
-.carousel-cell:nth-child(3){
-	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('../asset/img/033-p-800.png');
-}
-
-.carousel.is-fullscreen .carousel-cell {
-  height: 100%;
-}
-
-.carousel-cell .carousel-content{
-	background: #fff;
-	padding: 20px;
+.owl-carousel{
 	margin-top: 10rem;
 }
-
-.btn-bar{
-	font-size: 20px;
+.item-carousel{
+	padding: 20px;
+	box-sizing: border-box;
 }
+
+.owl-wrap-text{
+	max-width: 800px;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.owl-wrap-text p{
+	box-sizing: border-box;
+	margin-top: 2rem;
+}
+.owl-navigation{
+	max-width: 600px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: right;
+}
+.owl-navigation .btn-nav{
+	margin: 8;
+	padding: 10px;
+
+}
+
 @media only screen and (max-width: 780px){
 	.carousel-cell{
 		height: 300px;
@@ -103,6 +97,7 @@ header.header .head-body .btn-bar{
 		z-index: 999 !important;
 		left: 0;
 		top: 0;
+		display: none;
 		float: none !important;
 	}
 	.menu-head .menu-head-body{
