@@ -84,19 +84,47 @@ header.header .head-body .btn-bar{
 	margin-top: 3.6rem;
 }
 
-.owl-dots .owl-dot.active{
-	background: red;
+.owl-dot {
+	width: 2rem;
+	border: 1px solid #dee2e6;
+	overflow: hidden;
 }
+
+.owl-dot:first-child {
+	border-top-left-radius: .3rem;
+	border-bottom-left-radius: .3rem;
+}
+
+.owl-dot:last-child {
+	border-top-right-radius: .3rem;
+	border-bottom-right-radius: .3rem;
+}
+
 .countDot{
-	background: transparent !important;
+	width: 100%;
+	border: none;
+	cursor: pointer;
+	background-color: #fff;
 	outline: none;
-	padding: 8px 15px;
-	border: 1px solid #dcdcdc;
+	padding: .5rem .75rem;
+	line-height: 1.25;
 }
+
+.owl-dots .owl-dot.active .countDot{
+	background-color: #e9ecef;
+	border-color: #dee2e6;
+}
+
+.countDot:hover {
+	color: #0056b3;
+	background-color: #e9ecef;
+	border-color: #dee2e6;
+}
+
 .countDot:before{
-		counter-increment: countDots;
-	 content: counter(countDots);
-	 color: #333;
+	counter-increment: countDots;
+	content: counter(countDots);
+	color: #007bff
 }
 
 .countDot.is-selected {
